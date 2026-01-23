@@ -1,0 +1,22 @@
+.button {
+  padding: 0.5rem 1rem;
+  background-color: var(--pokemonBlue);
+  color: white;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s, opacity 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover:not(:disabled) {
+  background-color: rgb(65, 84, 137);
+}
+
+.button:active:not(:disabled) {
+  background-color: var(--pokemonBlue);
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
